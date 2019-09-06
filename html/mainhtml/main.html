@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Purple Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+  <link href="../../fonts/Ubuntu/Ubuntu-Light.woff2"/>
+  <link href="../../fonts/Ubuntu/Ubuntu-Regular.woff2"/>
+  <script src="../../js/vue2.js"></script>
+  <script src="../../js/axios.js"></script>
+
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!--表头-->
+    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <!--标题-->
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo" href="#"><h4>天翼管理中心</h4></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-stretch">
+        <div class="search-field d-none d-md-block">
+        </div>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-profile dropdown">
+            <!--右上角用户信息及头像-->
+            <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+              <div class="nav-profile-img">
+               <!-- <img src="#" alt="img">--><!--头像放置处自行选择是否使用该功能-->
+                <span class="availability-status online"></span><!--在线状态-->
+              </div>
+              <div class="nav-profile-text">
+                <p class="mb-1 text-black">用户姓名放置处</p>
+              </div>
+            </a>
+            <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="#">
+                <i class="mdi mdi-cached mr-2 text-success"></i>
+                <!--刷新用户信息-->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="mdi mdi-logout mr-2 text-primary"></i>
+                <!--退出-->
+              </a>
+            </div>
+          </li>
+          <!--右上角提醒信息表-->
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+              <i class="mdi mdi-email-outline"></i>
+              <span class="count-symbol bg-warning"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+              <h6 class="p-3 mb-0">信息</h6>
+              <!--来信信息-->
+              <div class="dropdown-divider"></div>
+              <h6 class="p-3 mb-0 text-center">信息数量</h6>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!--整个下方-->
+    <div class="container-fluid page-body-wrapper">
+      <!--左面列表-->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <!--用户信息链接-->
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">
+              <span class="menu-title">主页</span>
+              <i class="mdi mdi-home menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+              <span class="menu-title">主功能列表</span>
+              <i class="menu-arrow"></i>
+              <i class="mdi mdi-medical-bag menu-icon"></i>
+            </a>
+            <div class="collapse" id="general-pages">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/blank-page.html"> 分支功能列表 </a></li>
+              </ul>
+              </div>
+          </li>
+        </ul>
+      </nav>
+      <!--作业区-->
+      <div class="main-panel">
+        <div class="content-wrapper">
+         <!-- <img src="../../images/b515f51skbaef9qh2p5m84h134_b6a249288bfccc217df6ed9c0ee80c131567754550.0618.png">-->
+        </div>
+
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <!--<script src="../../js/off-canvas.js"></script>-->
+  <!--<script src="../../js/misc.js"></script>-->
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!--<script src="../../js/chart.js"></script>-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>
